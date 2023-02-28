@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Desarrollo de CV web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--MENU PRINCIPAL-->
+    <div class="contenedor-header">
+         <header>
+            <div class="logo">
+                <a href="#">CV</a>
+            </div>
+            <ul id="ul">
+                <li><a href="#INICIO" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#FORMACION" onclick="seleccionar()">FORMACION</a></li>
+                <li><a href="#DATOS PERSONALES" onclick="seleccionar()">DATOS PERSONALES</a></li>
+                <li><a href="#HABILIDADES" onclick="seleccionar()">HABILIDADES</a></li>
+                <li><a href="#REDES" onclick="seleccionar()">REDES</a></li>
+            </ul>
+            <div class="ul-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+         </header>
+    </div>
+    <div class="clearfix"></div>
+
+    <!--INICIO-->
+    <nav id="INICIO" class="inicio">
+        <img src="foto mia para cv.jpg" class="img" alt="foto de mi persona con camisa negra">
+        <h1 class="nombre">SANTOS EMANUEL RUSSO</h1>
+    </nav>
+
+    <!--FORMACION-->
+    <section id="FORMACION" class="formacion">
+        <div class="contenido-formacion">
+            <h2>FORMACION</h2>
+            <div class="col">
+                <ul>
+                    <li>
+                        <strong>Secundario:</strong>
+                        Completo
+                    </li>
+                    <li>
+                        <strong>Idiomas:</strong>
+                        Ingles basico
+                    </li>
+                    <li>
+                        <strong>Tecnico de Pc</strong>
+                    </li>
+                    <li>
+                        <strong>Desarollo web:</strong>
+                             html , css , js , framework
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--DATOS PERSONALES-->
+    <section id="DATOS PERSONALES" class="datos-personales">
+        <div class="contenido-personales">
+            <h3>DATOS PERSONALES</h3>
+            <div class="columnas">
+                <ul>
+                    <li>
+                        <strong>Edad:</strong>
+                        31
+                    </li>
+                    <li>
+                        <strong>Estado civil:</strong>
+                        Soltero
+                    </li>
+                    <li>
+                        <strong>Telefono:</strong>
+                        +54 351-5111222
+                    </li>
+                    <li>
+                        <strong>Direccion:</strong>
+                        Av Pueyrredon 800
+                    </li>
+                    <li>
+                        <strong>Ciudad:</strong>
+                        Cordoba
+                    </li>
+                    <li>
+                        <strong>Pais:</strong>
+                        Argentina
+                    </li>
+                    <li>
+                        <strong>e-mail:</strong>
+                        probando@gmail.com
+                    </li>
+                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--HABILIDADES-->
+    <article class="habilidades" id="HABILIDADES">
+        <div class="contenido-article">
+            <h2>HABILIDADES</h2>
+            <div class="filas">
+                <!--technical habilidades-->
+                <div class="listado">
+                    <h3>Technical Habilidades</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ruby</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--professional habilidades-->
+                <div class="listado">
+                    <h3>Professional Habilidades</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <div class="clearfix"></div>
+
+    <!--Pie de pagina-->
+    <footer id="REDES" class="redes">
+        <a href="#INICIO" class="arriba">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <h4>Redes</h4>
+        <div class="REDES">
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://es-la.facebook.com/login.php"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <h5>Santos Emanuel Russo</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
